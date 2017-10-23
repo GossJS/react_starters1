@@ -2,7 +2,7 @@ import React, {Component as Comp} from 'react';
 import {interval as inter} from 'gossrandom';
 const n = inter(40, 60);
 
-export default class Greeting extends Comp {
+export default class extends Comp {
   constructor(props) {
     super(props);
     this.state = {
