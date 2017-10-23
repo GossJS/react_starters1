@@ -1,18 +1,29 @@
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+const WDS_PORT = 1234;
+const myTitle = 'Demo React Awesome 23-10-2017';
+
 export default {
   "entry": "./src/App.jsx",
+  "resolve" : {"extensions": [".js", ".jsx"]},
   "output": {
-    "publicPath": "/dist",
-    "filename": "bundle.js"
+    "publicPath": "/",
+    "filename": "./dist/bundle.js"
   },
   "devtool": "sourcemap",
   "module": {
     "rules": [{
-      "loader": "babel-loader"
+ 	  "test": /\.jsx$/,
+    "loader": "babel-loader"
     }]
+  },
+  "plugins": [new HtmlWebpackPlugin({
+    "title": myTitle,
+    "template": "./src/my-index.ejs",
+    "h2": myTitle
+  })],
+  "devServer": {
+    "port": WDS_PORT
   }
+
 };
-// this files: webpack.config.babel.js
-// .babelrc should contain {"presets":["env","react"]}
-// package.json should contain "scripts": {"build":"webpack-dev-server"}
-// https://gist.github.com/gossoudarev/f75b3c8f060d7d7947108ac9f2ef044c 
-// can configure devServer port: можно ещё настроить порт девсервера "devServer":{"port":WDS_PORT}
+// this file: webpack.config.babel.js fork from https://kodaktor.ru/j/min_react_webpack
