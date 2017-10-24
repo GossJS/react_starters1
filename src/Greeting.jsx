@@ -15,7 +15,7 @@ export default class extends Comp {
   render() {
     return <div><hr/>
       <h2>Hi! You random number is {n}!</h2>
-      <button onClick={e=>this.onButtonClick(e)}>Click me!</button>
+      <button onClick={::this.onButtonClick}>Click me!</button>
     </div>
   }
 }
