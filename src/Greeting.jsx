@@ -1,5 +1,6 @@
-import React, {Component as Comp} from 'react';
-import {interval as inter} from 'gossrandom';
+import React, { Component as Comp } from 'react';
+import { interval as inter } from 'gossrandom';
+
 const n = inter(40, 60);
 
 export default class extends Comp {
@@ -7,15 +8,15 @@ export default class extends Comp {
     super(props);
     this.state = {
       text: ''
-    }
+    };
   }
-  onButtonClick(e){
+  onButtonClick(e) {
     alert(e.target.nodeName);
   }
   render() {
-    return <div><hr/>
+    return (<div><hr />
       <h2>Hi! You random number is {n}!</h2>
-      <button onClick={e=>this.onButtonClick(e)}>Click me!</button>
-    </div>
+      <button onClick={e => this.onButtonClick(e)}>Click me!</button>
+    </div>);
   }
 }
