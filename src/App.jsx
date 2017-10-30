@@ -1,14 +1,16 @@
-import React, { Component as Comp } from 'react';
+import React from 'react';
 import { render as r } from 'react-dom';
-import Greeting from './Greeting';
+import { AppContainer } from 'react-hot-loader';
+import MyDiv from './MyDiv';
 
-class MyDiv extends Comp {
-  render() {
-    return (<div><div><Greeting />Hey! My awesome nice head is {this.props.head}</div><div>My body is {this.props.body}</div></div>);
-  }
-}
+const render = (Compo, props) =>
+  r(
+    <AppContainer>
+       <Compo {...props} />
+    </AppContainer>,
+    document.querySelector('.cont')
+  );
 
-r(
-  <MyDiv head="mycomponent" body="mybody" />,
-  document.querySelector('.cont')
-);
+const starter = () => render(MyDiv, { head: 'Greetings!', body: 'Working!' });
+starter();
+if (module.hot) module.hot.accept('./MyDiv', starter);
