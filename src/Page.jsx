@@ -5,11 +5,13 @@ import Toggles from './Toggles';
 
 export default class extends Comp {
   render() {
-    return (<MuiThemeProvider><div><h3>Choose a nice component for you</h3>
-        <hr />
-        <Chips />
-        <hr />
-        <Toggles />
+    return (<MuiThemeProvider><div className="row marketing">
+        <div className="col">
+          <Chips />
+        </div>
+        <div className="col">
+          <Toggles />
+        </div>
       </div></MuiThemeProvider>);
   }
 }

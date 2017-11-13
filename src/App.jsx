@@ -1,13 +1,14 @@
 import React from 'react';
 import { render as r } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
+import { BrowserRouter } from 'react-router-dom';
 import Page from './Page';
 
 const render = (Compo, props = {}) =>
   r(
-    <AppContainer>
+    <AppContainer><BrowserRouter>
        <Compo {...props} />
-    </AppContainer>,
+    </BrowserRouter></AppContainer>,
     document.querySelector('.cont')
   );
 

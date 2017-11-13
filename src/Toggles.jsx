@@ -28,7 +28,7 @@ const styles = {
 const ToggleExampleSimple = () => (
   <div style={styles.block}>
     <Toggle
-      label="Simple"
+      label="Very simple"
       style={styles.toggle}
     />
     <Toggle
