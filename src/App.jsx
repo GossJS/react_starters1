@@ -1,9 +1,9 @@
 import React from 'react';
 import { render as r } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import MyDiv from './MyDiv';
+import Page from './Page';
 
-const render = (Compo, props) =>
+const render = (Compo, props = {}) =>
   r(
     <AppContainer>
        <Compo {...props} />
@@ -11,6 +11,6 @@ const render = (Compo, props) =>
     document.querySelector('.cont')
   );
 
-const starter = () => render(MyDiv, { head: 'Greetings!', body: 'Working!' });
+const starter = () => render(Page);
 starter();
-if (module.hot) module.hot.accept('./MyDiv', starter);
+if (module.hot) module.hot.accept('./Page', starter);
