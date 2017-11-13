@@ -39,7 +39,8 @@ export default {
   "devServer": {
     "port": WDS_PORT,
     "hot": true,
-    "host": "0.0.0.0"
+    "host": "0.0.0.0",
+    "historyApiFallback": true
   }
 
 };

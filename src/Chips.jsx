@@ -8,7 +8,7 @@ export default class ChipExampleArray extends React.Component {
     this.state = { chipData: [
       { key: 0, label: 'Angular' },
       { key: 1, label: 'JQuery' },
-      { key: 2, label: 'Polymer' },
+      { key: 2, label: 'VUE' },
       { key: 3, label: 'ReactJS' },
     ] };
     this.styles = {
