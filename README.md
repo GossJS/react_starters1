@@ -5,7 +5,7 @@ gentle introduction to react
 
 по итогам занятия *14.11.2017* создана ветвь 
 
-[step4-heroku-express](/GossJS/react_starters1/tree/step4-heroku-express)
+[step4-heroku-express](../../tree/step4-heroku-express)
 
  где находится всё готовое для деплоя SPA с клиентским роутером
  
