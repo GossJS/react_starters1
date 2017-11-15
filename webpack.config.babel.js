@@ -22,7 +22,8 @@ export default {
     "h2": myTitle
   })],
   "devServer": {
-    "port": WDS_PORT
+    "port": WDS_PORT,
+    "host": "0.0.0.0"
   }
 
 };
