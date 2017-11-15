@@ -1,6 +1,6 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 const WDS_PORT = 1234;
-const myTitle = 'Demo React Awesome 23-10-2017';
+const myTitle = 'Demo React Awesome 15-11-2017';
 
 export default {
   "entry": "./src/App.jsx",

@@ -1,14 +1,21 @@
-import React, { Component as Comp } from 'react';
-import { render as r } from 'react-dom';
-import Greeting from './Greeting';
+import React from 'react';
+import { render } from 'react-dom';
+import MyComp from './MyComp';
 
-class MyDiv extends Comp {
-  render() {
-    return (<div><div><Greeting />Hey! My awesome nice head is {this.props.head}</div><div>My body is {this.props.body}</div></div>);
-  }
-}
+const data = [
+  { title: 'First Compo', text: 'Lorem ipsum' },
+  { title: 'Second Compo', text: 'Quo vadis?' },
+  { title: 'Latin is chique', text: 'O tempora o mores' },
+  { title: 'I adore Roma', text: 'Status quo' }
+];
 
-r(
-  <MyDiv head="mycomponent" body="mybody" />,
-  document.querySelector('.cont')
+
+const App = () => (
+        <div>
+          {data.map((x, i) =>
+                  <MyComp key={i} {...x} />)}
+        </div>);
+render(
+  <App />,
+  document.querySelector('.container')
 );
