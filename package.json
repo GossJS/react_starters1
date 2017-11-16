@@ -1,26 +1,23 @@
 {
   "scripts": {
-    "dev:start": "webpack-dev-server"
+    "start": "node --experimental-modules s.mjs",
+    "postinstall": "./node_modules/webpack/bin/webpack.js -p"
   },
-  "name": "y",
-  "version": "1.0.0",
-  "main": "index.js",
+  "engines": {
+    "node": ">=8.5.0"
+  },
   "repository": "https://github.com/GossJS/react_starters1",
   "author": "<ibg2003@yandex.ru>",
   "license": "MIT",
   "dependencies": {
-    "gossrandom": "^1.0.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
-  },
-  "devDependencies": {
+    "react-dom": "^16.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "eslint-config-rallycoding": "^3.2.0",
     "html-webpack-plugin": "^2.30.1",
     "webpack": "^3.8.1",
-    "webpack-dev-server": "^2.9.3"
+    "express": "^4.15.4"
   }
 }
