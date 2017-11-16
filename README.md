@@ -1,7 +1,7 @@
 # react_starters1
 gentle introduction to react
 
-Основа - в ветке fromwebpackbin
+Основа - в ветке fromwebpackbin и step4-heroku-express (т.е. подготовка к деплою)
 
 Изменён файл ./src/MyComp.jsx
 
