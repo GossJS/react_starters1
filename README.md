@@ -5,6 +5,19 @@ gentle introduction to react
 
 Здесь, естественно, другой файл настройки веб-пака и другой package.json (в зип-архиве то, что сгенерировал webpackbin) - и код здесь прогнан через линтер. Этот проект запускается с помощью webpack-dev-server в классе, чтобы студенты могли подключиться в локальной сети.
 
+git clone -b fromwebpackbin https://github.com/GossJS/react_starters1.git .
+
+yarn
+
+yarn run dev:start
+
+или
+
+npx webpack-dev-server
+
+
+---
+
 https://www.webpackbin.com/bins/-KyuBt79ygheRHAjNAJ0
 
 или
