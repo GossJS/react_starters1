@@ -2,14 +2,10 @@
   "scripts": {
     "dev:start": "webpack-dev-server"
   },
-  "name": "y",
-  "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/GossJS/react_starters1",
   "author": "<ibg2003@yandex.ru>",
   "license": "MIT",
   "dependencies": {
-    "gossrandom": "^1.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
