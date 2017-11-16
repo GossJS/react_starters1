@@ -7,7 +7,7 @@ export default {
   "resolve" : {"extensions": [".js", ".jsx"]},
   "output": {
     "publicPath": "/",
-    "filename": "./dist/bundle.js"
+    "filename": "./bundle.js"
   },
   "devtool": "sourcemap",
   "module": {
@@ -20,11 +20,7 @@ export default {
     "title": myTitle,
     "template": "./src/my-index.ejs",
     "h2": myTitle
-  })],
-  "devServer": {
-    "port": WDS_PORT,
-    "host": "0.0.0.0"
-  }
+  })]
 
 };
 // this file: webpack.config.babel.js fork from https://kodaktor.ru/j/min_react_webpack
