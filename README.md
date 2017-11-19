@@ -1,6 +1,8 @@
 # react_starters1
 gentle introduction to react
 
+git clone -b step3-material-router https://github.com/GossJS/react_starters1.git
+
 step1 и step2 сделаны во время занятия 23.10.2017 (II курс)
 
 
