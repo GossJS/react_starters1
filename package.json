@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "dev:start": "webpack-dev-server"
+    "start": "./node_modules/.bin/webpack --config webpack.client.config.babel.js -p",
+    "ssr:start": "yarn start && ./node_modules/.bin/webpack --config webpack.server.config.babel.js && node s.js",
+    "dev:start": "webpack-dev-server --config webpack.client.config.babel.js",
+    "mock:start": "yarn start && node --experimental-modules s.mjs"
   },
   "name": "y",
   "version": "1.0.0",
@@ -10,6 +13,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.17.0",
+    "express": "^4.16.2",
     "gossrandom": "^1.0.0",
     "material-ui": "^0.19.4",
     "react": "^16.0.0",

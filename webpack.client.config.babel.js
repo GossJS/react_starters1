@@ -9,7 +9,7 @@ export default {
   "resolve" : {"extensions": [".js", ".jsx"]},
   "output": {
     "publicPath": "/",
-    "filename": "./dist/bundle.js"
+    "filename": "./bundle.js"
   },
   "devtool": "sourcemap",
   "module": {
