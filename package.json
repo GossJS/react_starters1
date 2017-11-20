@@ -1,16 +1,12 @@
 {
   "scripts": {
-    "start": "./node_modules/.bin/webpack --config webpack.client.config.babel.js -p",
+    "start": "./node_modules/.bin/webpack --config webpack.prod.client.config.babel.js -p",
     "ssr:start": "yarn start && ./node_modules/.bin/webpack --config webpack.server.config.babel.js && node s.js",
-    "dev:start": "webpack-dev-server --config webpack.client.config.babel.js",
-    "mock:start": "yarn start && node --experimental-modules s.mjs"
+    "dev:start": "webpack-dev-server --config webpack.dev.client.config.babel.js",
+    "mock:start": "./node_modules/.bin/webpack --config webpack.dev.client.config.babel.js -p && node --experimental-modules s.mjs"
   },
-  "name": "y",
-  "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/GossJS/react_starters1",
   "author": "<ibg2003@yandex.ru>",
-  "license": "MIT",
   "dependencies": {
     "axios": "^0.17.0",
     "express": "^4.16.2",

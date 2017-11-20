@@ -2,7 +2,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { HotModuleReplacementPlugin, NamedModulesPlugin } from 'webpack';
 
 const WDS_PORT = 1234;
-const myTitle = 'My Hot Awesome 30-10-2017';
+const myTitle = 'back to SSR';
 
 export default {
   "entry": ["react-hot-loader/patch", "./src/App.jsx"],

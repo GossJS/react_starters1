@@ -1,9 +1,8 @@
 import express from 'express';
 /* */
 import React from 'react';
-import { renderToString as rS } from 'react-dom/server';
-import { StaticRouter } from 'react-router';
-import Page from './src/Page';
+import { renderToString } from 'react-dom/server';
+import Page from './src/Page2';
 
 const html = what => `
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ express()
   .use(express.static('.'))
   .get('/author', r => r.res.send('Elias Goss'))
 
-  .get('/*', r => r.res.send(html(rS(<StaticRouter context={{}}><Page /></StaticRouter>))))
+  .get('/', r => r.res.send(html(renderToString(<Page />))))
 
   .use((e, r, res, n) => res.status(500).end(`Error: ${e}`))
   .listen(process.env.PORT || PORT, () => console.log(process.pid))
