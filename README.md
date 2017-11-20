@@ -1,5 +1,9 @@
 # SSR + client routing
 
+yarn run ssr:StaticRouter
+
+и далее на порту 4321 - щелкайте по ссылкам, обновляйте страницы...
+
 Отдаём весь app и делаем hydrate на клиенте.
 
 В этой версии (step3a-material-router-ssr-step4) используется MaterialUI.
