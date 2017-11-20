@@ -12,19 +12,19 @@ const html = what => `
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <title>closer to SSR</title>
+    <title>SSR + client routing</title>
   </head>
   <body>
     <div class="container">
-      <h1 class="display-3"></h1>
-      <h2>closer to SSR</h2>
+      <h1 class="display-3">SSR + client routing</h1>
+      <h4 title="GossJS" id="author">Elias in SSR</h4>
       <div class="cont">${what}</div>
     </div>
   <script type="text/javascript" src="./bundle.js"></script></body>
 </html>
 `;
 
-const PORT = 1234;
+const PORT = 4321;
 express()
   .use(express.static('.'))
   .get('/author', r => r.res.send('Elias Goss'))
