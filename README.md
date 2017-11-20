@@ -4,7 +4,7 @@ yarn run ssr:start
 
 и далее на порту 4321 - щелкайте по ссылкам, обновляйте страницы...
 
-Отдаём весь app и делаем hydrate на клиенте.
+Отдаём весь Page и делаем hydrate на клиенте.
 
 В этой версии (step3a-material-router-ssr-step4) используется MaterialUI.
 
