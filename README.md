@@ -1,6 +1,6 @@
 # SSR + client routing
 
-yarn run ssr:StaticRouter
+yarn run ssr:start
 
 и далее на порту 4321 - щелкайте по ссылкам, обновляйте страницы...
 
