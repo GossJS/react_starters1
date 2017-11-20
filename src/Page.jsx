@@ -46,5 +46,3 @@ export default class extends Comp {
       </div></MuiThemeProvider>);
   }
 }
-
-export { MYCOMP_PAGE_ROUTE };
