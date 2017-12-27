@@ -1,5 +1,7 @@
 # SSR + client routing
 
+(см. https://habrahabr.ru/company/ruvds/blog/339148/ о новшествах React16)
+
 yarn run ssr:start
 
 и далее на порту 4321 - щелкайте по ссылкам, обновляйте страницы...
