@@ -1,7 +1,7 @@
 # react_starters1
 gentle introduction to react
 
-![alt scheme](react_starters1.png "Начало работы")
+![alt scheme](react_starters1_.png "Начало работы")
 
 ветвь [step2-eslint](../../tree/step2-eslint) содержит подключение линтера (он есть в отдельном репозитории)
 
