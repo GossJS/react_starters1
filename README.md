@@ -5,6 +5,8 @@ gentle introduction to react
 
 ветвь [step2-eslint](../../tree/step2-eslint) содержит подключение линтера (он есть в отдельном репозитории)
 
+https://github.com/GossJS/eslint/tree/flowmin - отдельно о flow
+
 ---
 
 по итогам занятия 30.10.2017 создана ветвь [step2-30102017](../../tree/step2-30102017)
