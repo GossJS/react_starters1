@@ -7,6 +7,8 @@ gentle introduction to react
 
 https://github.com/GossJS/eslint/tree/flowmin - отдельно о flow
 
+Пример расположения приложения прямо в браузере: https://kodaktor.ru/min_react_live2 
+
 ---
 
 по итогам занятия 30.10.2017 создана ветвь [step2-30102017](../../tree/step2-30102017)
@@ -14,7 +16,13 @@ https://github.com/GossJS/eslint/tree/flowmin - отдельно о flow
 где реализован Hot Module Replacement
 
 ---
+ветвь https://github.com/GossJS/react_starters1/tree/step3-material-router
 
+содержит роутер и MaterialUI
+
+![alt scheme](2018-03-12_01-23-00.png "Начало работы")
+
+---
 по итогам занятия *14.11.2017* создана ветвь 
 
 [step4-heroku-express](../../tree/step4-heroku-express)
