@@ -7,6 +7,8 @@ gentle introduction to react
 
 `yarn && yarn start`
 
+далее localhost:1234
+
 Тема 4
 
 https://kodaktor.ru/min_react_live2
