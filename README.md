@@ -1,6 +1,8 @@
 # react_starters1
 gentle introduction to react
 
+https://github.com/GossJS/reactDemo2018 - репо к видеоролику по созданию проекта в консоли
+
 ![alt scheme](react_starters1_.png "Начало работы")
 
 ветвь [step2-eslint](../../tree/step2-eslint) содержит подключение линтера (он есть в отдельном репозитории)
